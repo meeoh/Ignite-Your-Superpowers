@@ -1,0 +1,56 @@
+/*
+@Author: ThemeMascot
+@URL: http://ThemeMascot.com
+
+This is the file where you can add your custom styles to change the look of the
+theme. But don't modify style-main.css file.
+
+*/
+
+/* Your custom css codes start here: */
+
+.header-nav .header-nav-wrapper .menuzord {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menuzord-brand {
+  margin: 0;
+}
+
+.logoOnImage {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  max-height: 150px;
+  z-index: 9999;
+}
+
+.topLogos {
+  display: flex;
+  align-items: center;
+}
+
+.topLogos img {
+  max-height: 50px;
+}
+
+/* Hide stuff on smaller screen */
+@media screen and (max-width: 400px) {
+  .menuzord-brand {
+    margin: 0 !important;
+  }
+
+  .topLogos {
+    padding: 8px;
+  }
+
+  .logoOnImage {
+    display: none;
+  }
+
+  .topBarButtons {
+    display: none !important;
+  }
+}
