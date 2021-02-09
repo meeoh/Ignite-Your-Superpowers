@@ -54,3 +54,12 @@ theme. But don't modify style-main.css file.
     display: none !important;
   }
 }
+
+.bg-theme-colored {
+  margin-top: 0;
+}
+
+.teamOverlayContent {
+  /* padding: 0 !important; */
+  top: 0 !important;
+}
