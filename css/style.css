@@ -63,3 +63,17 @@ theme. But don't modify style-main.css file.
   /* padding: 0 !important; */
   top: 0 !important;
 }
+
+.mobileHeader {
+  display: none !important;
+}
+
+@media (max-width: 1038px) {
+  .mobileHeader {
+    display: inherit !important;
+  }
+
+  .regularHeader {
+    display: none !important;
+  }
+}
