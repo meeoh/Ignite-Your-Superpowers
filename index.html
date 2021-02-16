@@ -1289,7 +1289,7 @@
                       </div>
                     </div>
                     <div class="team-info bg-theme-colored">
-                      <h3 class="mt-0 text-white">Pankaj<br />Sharma</h3>
+                      <h3 class="mt-0 text-white founderName">Pankaj<br />Sharma</h3>
                       <ul class="styled-icons icon-circled icon-theme-colored">
                         <li>
                           <a
@@ -1321,7 +1321,7 @@
                       </div>
                     </div>
                     <div class="team-info bg-theme-colored">
-                      <h3 class="mt-0 text-white">Amad<br />Abdullah</h3>
+                      <h3 class="mt-0 text-white founderName">Amad<br />Abdullah</h3>
                       <ul class="styled-icons icon-circled icon-theme-colored">
                         <li>
                           <a href="https://www.linkedin.com/in/amadabdullah/"
@@ -1694,7 +1694,7 @@
     </section> -->
 
         <!-- Section: Become a Volunteer -->
-        <section id="signup" style="background-color: #f7f8fa">
+        <section id="signup" style="background-color: #f7f8fa; margin-bottom: 32px">
           <div class="container">
             <div class="section-content">
               <div class="row">
@@ -1753,40 +1753,6 @@
                       </button>
                     </div>
                   </form>
-                  <!-- Job Form Validation-->
-                  <script type="text/javascript">
-                    $("#volunteer_apply_form").validate({
-                      submitHandler: function (form) {
-                        var form_btn = $(form).find('button[type="submit"]');
-                        var form_result_div = "#form-result";
-                        $(form_result_div).remove();
-                        form_btn.before(
-                          '<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>'
-                        );
-                        var form_btn_old_msg = form_btn.html();
-                        form_btn.html(
-                          form_btn.prop("disabled", true).data("loading-text")
-                        );
-                        $(form).ajaxSubmit({
-                          dataType: "json",
-                          success: function (data) {
-                            if (data.status == "true") {
-                              $(form).find(".form-control").val("");
-                            }
-                            form_btn
-                              .prop("disabled", false)
-                              .html(form_btn_old_msg);
-                            $(form_result_div)
-                              .html(data.message)
-                              .fadeIn("slow");
-                            setTimeout(function () {
-                              $(form_result_div).fadeOut("slow");
-                            }, 6000);
-                          },
-                        });
-                      },
-                    });
-                  </script>
                 </div>
                 <div class="col-md-6 sm-text-center">
                   <img

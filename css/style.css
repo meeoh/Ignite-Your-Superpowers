@@ -38,6 +38,15 @@ theme. But don't modify style-main.css file.
 
 /* Hide stuff on smaller screen */
 @media screen and (max-width: 400px) {
+  .founderName {
+    font-size: 16px;
+  }
+
+  .team-member .overlay,
+  .team-member .icon-circled {
+    display: none;
+  }
+
   .menuzord-brand {
     margin: 0 !important;
   }
