@@ -33,4 +33,10 @@ $(document).ready(() => {
       })
       .catch((error) => console.error("Error!", error.message));
   });
+
+  $(".team-member").click((e) => {
+    if (window.screen.width < 400) {
+      window.open(e.delegateTarget.getAttribute("mobileLink"));
+    }
+  });
 });
