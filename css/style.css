@@ -36,10 +36,19 @@ theme. But don't modify style-main.css file.
   max-height: 50px;
 }
 
+.team-member-link {
+  display: block;
+  pointer-events: none;
+}
+
 /* Hide stuff on smaller screen */
 @media screen and (max-width: 400px) {
   .founderName {
     font-size: 16px;
+  }
+
+  .team-member-link {
+    pointer-events: all;
   }
 
   .team-member .overlay,
