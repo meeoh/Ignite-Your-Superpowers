@@ -648,7 +648,7 @@ fieldset[disabled] .btn-border.btn-theme-colored.focus {
 .btn-dark.btn-theme-colored.active.focus,
 .open > .dropdown-toggle.btn-dark.btn-theme-colored.focus {
   color: #fff;
-  background-color: #e40254;
+  background-color: #ed9856;
   border-color: #ec7e2a;
 }
 .btn-dark.btn-theme-colored:active,
@@ -770,7 +770,7 @@ fieldset[disabled] .btn-gray.btn-theme-colored.focus {
 .btn-theme-colored.active.focus,
 .open > .dropdown-toggle.btn-theme-colored.focus {
   color: #fff;
-  background-color: #e40254;
+  background-color: #ed9856;
   border-color: #ec7e2a;
 }
 .btn-theme-colored:active,
