@@ -19,15 +19,13 @@ $(document).ready(() => {
     e.preventDefault();
 
     const button = $(form.querySelector("button"));
-    const inputs = $(form.querySelectorAll("input"));
-
-    inputs.prop("disabled", true);
+    button.text("Loading...");
+    button.prop("disabled", true);
 
     fetch(scriptURL, { method: "POST", body: new FormData(form) })
       .then((response) => {
         form.reset();
         button.text("Thank you!");
-        inputs.prop("disabled", false);
         button.prop("disabled", false);
         setTimeout(() => {
           button.text("Join The Team");
